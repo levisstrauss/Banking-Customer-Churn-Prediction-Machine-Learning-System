@@ -1,0 +1,80 @@
+2025-05-07 04:38:38 - churn_library - INFO - Data imported successfully from ./data/bank_data.csv
+2025-05-07 04:38:38 - churn_library - INFO - Data preparation complete. Shape: (10127, 20)
+2025-05-07 04:38:38 - test_churn_library - INFO - SUCCESS: Data imported successfully from ./data/bank_data.csv
+2025-05-07 04:38:38 - test_churn_library - INFO - Dataframe dimensions: 10127 rows, 20 columns
+2025-05-07 04:38:38 - churn_library - ERROR - ERROR: File not found at ./data/non_existent_file.csv
+2025-05-07 04:38:38 - churn_library - INFO - Data imported successfully from ./data/bank_data.csv
+2025-05-07 04:38:38 - churn_library - INFO - Data preparation complete. Shape: (10127, 20)
+2025-05-07 04:38:38 - churn_library - INFO - Starting exploratory data analysis
+2025-05-07 04:38:38 - churn_library - INFO - Created distribution plot for Gender
+2025-05-07 04:38:39 - churn_library - INFO - Created distribution plot for Education_Level
+2025-05-07 04:38:39 - churn_library - INFO - Created distribution plot for Marital_Status
+2025-05-07 04:38:39 - churn_library - INFO - Created distribution plot for Income_Category
+2025-05-07 04:38:39 - churn_library - INFO - Created distribution plot for Card_Category
+2025-05-07 04:38:39 - churn_library - INFO - Created histogram for Customer_Age
+2025-05-07 04:38:39 - churn_library - INFO - Created histogram with KDE for Total_Trans_Ct
+2025-05-07 04:38:40 - churn_library - INFO - Created correlation matrix heatmap
+2025-05-07 04:38:40 - churn_library - INFO - Created scatter plot for transaction relationships
+2025-05-07 04:38:40 - churn_library - INFO - Exploratory data analysis complete
+2025-05-07 04:38:40 - test_churn_library - INFO - SUCCESS: EDA performed successfully
+2025-05-07 04:38:40 - test_churn_library - INFO - Plot file found: ./images/eda/Customer_Age.png
+2025-05-07 04:38:40 - test_churn_library - INFO - Plot file found: ./images/eda/Total_Trans_Ct.png
+2025-05-07 04:38:40 - test_churn_library - INFO - Plot file found: ./images/eda/correlation_matrix.png
+2025-05-07 04:38:40 - test_churn_library - INFO - Plot file found: ./images/eda/trans_amt_vs_count.png
+2025-05-07 04:38:40 - churn_library - INFO - Starting categorical feature encoding
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Gender with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Education_Level with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Marital_Status with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Income_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Card_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Categorical feature encoding complete
+2025-05-07 04:38:40 - test_churn_library - INFO - SUCCESS: Encoding completed for categories: ['Gender', 'Education_Level', 'Marital_Status', 'Income_Category', 'Card_Category']
+2025-05-07 04:38:40 - test_churn_library - INFO - All categorical columns successfully encoded
+2025-05-07 04:38:40 - churn_library - INFO - Starting categorical feature encoding
+2025-05-07 04:38:40 - churn_library - ERROR - The following columns were not found: ['Non_Existent_Column']
+2025-05-07 04:38:40 - churn_library - INFO - Starting feature engineering
+2025-05-07 04:38:40 - churn_library - INFO - Identified 5 categorical columns for encoding
+2025-05-07 04:38:40 - churn_library - INFO - Starting categorical feature encoding
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Gender with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Education_Level with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Marital_Status with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Income_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Card_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Categorical feature encoding complete
+2025-05-07 04:38:40 - churn_library - INFO - Feature engineering complete. Training set size: (7088, 19), Testing set size: (3039, 19)
+2025-05-07 04:38:40 - test_churn_library - INFO - SUCCESS: Feature engineering performed successfully
+2025-05-07 04:38:40 - test_churn_library - INFO - Train set: 7088 samples (15.96% churn)
+2025-05-07 04:38:40 - test_churn_library - INFO - Test set: 3039 samples (16.32% churn)
+2025-05-07 04:38:40 - churn_library - INFO - Starting feature engineering
+2025-05-07 04:38:40 - churn_library - INFO - Identified 5 categorical columns for encoding
+2025-05-07 04:38:40 - churn_library - INFO - Starting categorical feature encoding
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Gender with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Education_Level with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Marital_Status with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Income_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Encoding Card_Category with mean Churn values
+2025-05-07 04:38:40 - churn_library - INFO - Categorical feature encoding complete
+2025-05-07 04:38:40 - churn_library - INFO - Feature engineering complete. Training set size: (7088, 19), Testing set size: (3039, 19)
+2025-05-07 04:38:40 - churn_library - INFO - Starting model training process
+2025-05-07 04:38:40 - churn_library - INFO - Training Random Forest model with GridSearchCV
+2025-05-07 04:39:20 - churn_library - INFO - Random Forest best parameters: {'criterion': 'entropy', 'max_depth': 100, 'max_features': 'sqrt', 'n_estimators': 200}
+2025-05-07 04:39:20 - churn_library - INFO - Training Logistic Regression model
+2025-05-07 04:39:20 - churn_library - INFO - Creating classification report images
+2025-05-07 04:39:20 - churn_library - INFO - Classification report for Logistic_Regression saved successfully
+2025-05-07 04:39:20 - churn_library - INFO - Classification report for Random_Forest saved successfully
+2025-05-07 04:39:20 - churn_library - INFO - Classification report images created successfully
+2025-05-07 04:39:21 - churn_library - INFO - ROC curves saved successfully
+2025-05-07 04:39:21 - churn_library - INFO - Models saved successfully
+2025-05-07 04:39:21 - churn_library - INFO - Confusion matrix for Random_Forest saved successfully
+2025-05-07 04:39:21 - churn_library - INFO - Confusion matrix for Logistic_Regression saved successfully
+2025-05-07 04:39:22 - churn_library - INFO - Feature importance plot for Random_Forest saved successfully
+2025-05-07 04:39:22 - churn_library - INFO - Model training and evaluation complete
+2025-05-07 04:39:22 - test_churn_library - INFO - SUCCESS: Models trained successfully
+2025-05-07 04:39:22 - test_churn_library - INFO - Model file found: ./models/rfc_model.pkl
+2025-05-07 04:39:22 - test_churn_library - INFO - Model file found: ./models/logistic_model.pkl
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/ROC_curves.png
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/Random_Forest_Confusion_Matrix.png
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/Logistic_Regression_Confusion_Matrix.png
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/feature_importance_Random_Forest.png
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/classification_report_Random_Forest.png
+2025-05-07 04:39:22 - test_churn_library - INFO - Result plot found: ./images/results/classification_report_Logistic_Regression.png

@@ -133,7 +133,44 @@ def test_perform_eda_creates_expected_plots():
 ```
 ## 📊 Model Performance
 
-This project explores two machine learning models for churn prediction:
+This project explores two machine learning models for churn prediction with remarkably strong results:
+
+## 🧪 Results Summary
+
+| **Model**             | **Accuracy** | **Precision** | **Recall** | **F1 Score** |
+|-----------------------|--------------|---------------|------------|--------------|
+| Random Forest         | 1.00         | 1.00          | 1.00       | 1.00         |
+| Logistic Regression   | 0.89         | 0.82          | 0.73       | 0.76         |
+
+## Model Performance Details
+The classification reports show detailed metrics for both models:
+
+### 🌲 Random Forest Performance
+           precision    recall  f1-score    support
+
+       0       1.00      1.00      1.00       5957
+       1       1.00      1.00      1.00       1131
+
+accuracy                           1.00       7088
+
+### 📉 Logistic Regression Performance
+
+           precision    recall  f1-score    support
+
+       0       0.91      0.97      0.94       5957
+       1       0.74      0.48      0.58       1131
+
+accuracy                           0.89       7088
+
+
+The Random Forest model achieves perfect classification on the test set, which is remarkable. This could indicate either:
+
+1. An extremely effective model for this particular dataset
+2. Features that very clearly separate the classes
+3. A need to verify there's no data leakage between training and test sets
+
+The Logistic Regression model performs well but struggles more with correctly identifying the positive class (churn), 
+as shown by its lower recall (0.48) for class 1.
 
 ## Confusion Matrix Analysis
 The confusion matrix shows the Random Forest model's prediction results:
